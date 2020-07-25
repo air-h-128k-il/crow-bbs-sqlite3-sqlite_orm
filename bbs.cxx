@@ -1,7 +1,7 @@
 #include <memory>
 #include <stdexcept>
 #include "crow_all.h"
-#include <sqlite_orm/sqlite_orm.h>
+#include "sqlite_orm.h"
 
 struct Post {
     int id;
@@ -53,7 +53,7 @@ main() {
     res.end();
   });
 
-  app.port(40081)
+  app.port(18080)
     //.multithreaded()
     .run();
 }
